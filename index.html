@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sakura.css" type="text/css">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
+    <script src="main.js"></script>
     <title>About</title>
 </head>
 
@@ -14,88 +15,177 @@
         <hr>
         <p>Full Stack Developer & Certified Scrum Master</p>
         <p>Sorocaba, Brazil</p>
+        <a onclick="translateText('pt')">Português</a> |
+        <a onclick="translateText('en')">Inglês</a>
     </header>
-    <section>
-        <h2>Skills</h2>
-        <hr>
-        <table>
-            <thead>
-                <tr>
-                    <th align="left">Area</th>
-                    <th align="left">Skills</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td align="left">Back-End</td>
-                    <td align="left">Node.js, .NET WebAPI, .NET Core</td>
-                </tr>
-                <tr>
-                    <td align="left">Front-End</td>
-                    <td align="left">HTML + CSS, JavaScript, AngularJS, Vue.js, Ionic, Sass</td>
-                </tr>
-                <tr>
-                    <td align="left">Data</td>
-                    <td align="left">SQL Server, MongoDb</td>
-                </tr>
-                <tr>
-                    <td align="left">Operations</td>
-                    <td align="left">Git, Docker, Shellscript, Travis</td>
-                </tr>
-                <tr>
-                    <td align="left">Concepts</td>
-                    <td align="left">Scrum, Kanban, CD, CI, TDD</td>
-                </tr>
-            </tbody>
-        </table>
-        <h2>Experiences</h2>
-        <hr>
-        <p>I started my journey on development in Dez/2016 at Ventron, Sorocaba - Brazil, until now I worked with several technologies
-            and projects. At Ventron I worked with .NET WebApi, AngularJS, Ionic, .NET Core, .NET MVC, .NET WebForms, Appium,
-            TDD, SQL Server, MongoDb, and most of the time the projects used Agile Methodologies like Scrum and Kanban.
-        </p>
-        <p>I'd also worked on freelance projects, working with Node.js, Electron, Angular 5, and also on open source projects
-            using .NET Core, Vue.js, Ruby on Rails, React.js.
-        </p>
-        <p>I'm also a ScrumAlliance Certified Scrum Master, and love the idea of implementing agile thinking in organizations
-            and using it daily, not only with Scrum but with the methodology that suites better the organization.
-        </p>
-        <h2>Personal</h2>
-        <hr>
-        <p>
-            I graduated in Analysis and Systems Development at Fatec Sorocaba in December 2017 and also studied English for 8 years and
-            obtained a Certificate of Competence in English from the University of Michigan.
-        </p>
-        <p>About my personal life, I'm a 20 year old christian, borned in Sorocaba - Brazil, speak portuguese and english fluently
-            and I play Bass and watch Sports in the weekends
-        </p>
-    </section>
-    <footer>
-        <h3>Contact & Social Medias</h3>
-        <hr>
-        <ul>
-            <li>
-                Email:
-                <a href="mailto:vitormd97@gmail.com">vitormd97@gmail.com</a>
-            </li>
-            <li>
-                Phone:
-                <a href="tel:+5515981219298">+55 15 981219298</a>
-            </li>
-            <li>
-                Github:
-                <a href="https://github.com/vitormdias" target="_blank">vitormdias</a>
-            </li>
-            <li>
-                Codepen:
-                <a href="https://codepen.io/vitormdias" target="_blank">vitormdias</a>
-            </li>
-            <li>
-                LinkedIn:
-                <a href="https://www.linkedin.com/in/vitor-manfre-dias-323a27128/" target="_blank">Vitor Manfre Dias</a>
-            </li>
-        </ul>
-    </footer>
+    <div class="lang en" hidden>
+        <section>
+            <h2>Skills</h2>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th align="left">Area</th>
+                        <th align="left">Skills</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="left">Back-End</td>
+                        <td align="left">Node.js, .NET WebAPI, .NET Core</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Front-End</td>
+                        <td align="left">HTML + CSS, JavaScript, AngularJS, Vue.js, Ionic, Sass</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Data</td>
+                        <td align="left">SQL Server, MongoDb</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Operations</td>
+                        <td align="left">Git, Docker, Shellscript, Travis</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Concepts</td>
+                        <td align="left">Scrum, Kanban, CD, CI, TDD</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Experiences</h2>
+            <hr>
+            <p>I started my journey on development in Dez/2016 at Ventron, Sorocaba - Brazil, until now I worked with several
+                technologies and projects. At Ventron I worked with .NET WebApi, AngularJS, Ionic, .NET Core, .NET MVC, .NET
+                WebForms, Appium, TDD, SQL Server, MongoDb, and most of the time the projects used Agile Methodologies like
+                Scrum and Kanban.
+            </p>
+            <p>I'd also worked on freelance projects, working with Node.js, Electron, Angular 5, and also on open source projects
+                using .NET Core, Vue.js, Ruby on Rails, React.js.
+            </p>
+            <p>I'm also a ScrumAlliance Certified Scrum Master, and love the idea of implementing agile thinking in organizations
+                and using it daily, not only with Scrum but with the methodology that suites better the organization.
+            </p>
+            <h2>Personal</h2>
+            <hr>
+            <p>
+                I graduated in Analysis and Systems Development at Fatec Sorocaba in December 2017 and also studied English for 8 years and
+                obtained a Certificate of Competence in English from the University of Michigan.
+            </p>
+            <p>About my personal life, I'm a 20 year old christian, borned in Sorocaba - Brazil, speak portuguese and english
+                fluently and I play Bass and watch Sports in the weekends
+            </p>
+        </section>
+        <footer>
+            <h3>Contact & Social Medias</h3>
+            <hr>
+            <ul>
+                <li>
+                    Email:
+                    <a href="mailto:vitormd97@gmail.com">vitormd97@gmail.com</a>
+                </li>
+                <li>
+                    Phone:
+                    <a href="tel:+5515981219298">+55 15 981219298</a>
+                </li>
+                <li>
+                    Github:
+                    <a href="https://github.com/vitormdias" target="_blank">vitormdias</a>
+                </li>
+                <li>
+                    Codepen:
+                    <a href="https://codepen.io/vitormdias" target="_blank">vitormdias</a>
+                </li>
+                <li>
+                    LinkedIn:
+                    <a href="https://www.linkedin.com/in/vitor-manfre-dias-323a27128/" target="_blank">Vitor Manfre Dias</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <div class="lang pt">
+        <section id="pt">
+            <h2>Habilidades</h2>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th align="left">Área</th>
+                        <th align="left">Habilidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="left">Back-End</td>
+                        <td align="left">Node.js, .NET WebAPI, .NET Core</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Front-End</td>
+                        <td align="left">HTML + CSS, JavaScript, AngularJS, Vue.js, Ionic, Sass</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Dados</td>
+                        <td align="left">SQL Server, MongoDb</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Operações</td>
+                        <td align="left">Git, Docker, Shellscript, Travis</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Conceitos</td>
+                        <td align="left">Scrum, Kanban, CD, CI, TDD</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Experiências</h2>
+            <hr>
+            <p>Comecei minha jornada de desenvolvimento em Dez/2016 na Ventron, Sorocaba - Brasil, até agora trabalhei com várias
+                tecnologias e projetos. Na Ventron, trabalhei com o .NET WebApi, AngularJS, Ionic, .NET Core, .NET MVC, .NET
+                WebForms, Appium, TDD, SQL Server e MongoDb, na maioria das vezes os projetos utilizavam metodologias ágeis
+                como Scrum e Kanban.
+            </p>
+            <p>Eu também trabalhei em projetos freelance, trabalhando com Node.js, Electron, Angular 5, e também em projetos
+                open source usando o .NET Core, Vue.js, Ruby on Rails, React.js.
+            </p>
+            <p>Eu também sou um Certified Scrum Master pela ScrumAlliance, e adoro a idéia de implementar o pensamento ágil
+                nas organizações e usá-lo diariamente, não só com o Scrum, mas com a metodologia que for melhor para a organização.
+            </p>
+            <h2>Pessoal</h2>
+            <hr>
+            <p>
+                Sou graduado em Análise e Desenvolvimento de Sistemas pela Fatec Sorocaba em dezembro de 2017 e também estudei Inglês por
+                8 anos e obtive um Certificado de Competência em Inglês da Universidade de Michigan.
+            </p>
+            <p>Sobre a minha vida pessoal, sou cristão de 20 anos, nascido em Sorocaba, falo fluente em português e inglês,
+                toco baixo e assisto esportes nos finais de semana
+            </p>
+        </section>
+        <footer>
+            <h3>Contato & Links</h3>
+            <hr>
+            <ul>
+                <li>
+                    Email:
+                    <a href="mailto:vitormd97@gmail.com">vitormd97@gmail.com</a>
+                </li>
+                <li>
+                    Celular:
+                    <a href="tel:+5515981219298">+55 15 981219298</a>
+                </li>
+                <li>
+                    Github:
+                    <a href="https://github.com/vitormdias" target="_blank">vitormdias</a>
+                </li>
+                <li>
+                    Codepen:
+                    <a href="https://codepen.io/vitormdias" target="_blank">vitormdias</a>
+                </li>
+                <li>
+                    LinkedIn:
+                    <a href="https://www.linkedin.com/in/vitor-manfre-dias-323a27128/" target="_blank">Vitor Manfre Dias</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
 </body>
 
 </html>
